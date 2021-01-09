@@ -33,7 +33,12 @@ id: 1
    
     return (
         <div>
-         {questionBank.map(question => <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}} key={question.id}>{question.question} {question.answer1} {question.answer2} {question.answer3} {question.answer4}</div>)}
+         {questionBank.map(question => <div key={question.id}>{question.question}
+          <li>A) {question.answer1}</li>
+          <li>B) {question.answer2}</li> 
+           <li>C) {question.answer3}</li>
+           <li> D) {question.answer4}</li>
+          </div>)}
         </div>
     )
 }
