@@ -32,12 +32,17 @@ id: 1
     export default function Questions() { 
    
     return (
-        <div>
-         {questionBank.map(question => <div key={question.id}>{question.question}
-          <li>A) {question.answer1}</li>
-          <li>B) {question.answer2}</li> 
-           <li>C) {question.answer3}</li>
-           <li> D) {question.answer4}</li>
+        <div className='q-container'>
+         {questionBank.map(question => <div key={question.id}> 
+         <div  className='question-box'>{question.question}</div>
+
+         <div className='answer-box'>
+          <div> <input type='radio' className='answer-list' ></input>A. {question.answer1}</div>
+          <div> <input type='radio' className='answer-list'></input>  B. {question.answer2} </div>
+          <div> <input type='radio' className='answer-list'></input>  C. {question.answer3}</div> 
+           <div> <input type='radio' className='answer-list'></input> D. {question.answer4}</div>
+
+         </div>
           </div>)}
         </div>
     )
