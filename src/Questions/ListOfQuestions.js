@@ -7,10 +7,13 @@ export default function ListOfQuestions() {
                      correct: `const container = /*#__PURE__*/ React.createElement("div",{classsName: "container" },"Welcome to the React Fundamentals Quiz!")`, 
                          id: 1
                          },      
-         {question: `Lets see if this will work as well `, 
-             q: `Simply Just a test`,
-              answers: ['Answer One', 'Answer Two', 'Answer Three', 'Answer Four'],
-                   correct: 'Answer Four', 
+         {question: `Which one of the options below, has a controlled input in this scenario:`, 
+             q: `const [input, setInput] = useState('')`,
+              answers: [`<input type='text' value={text} onChange={event => setInput(event.target.value)}`
+              , `<input type'text' value={input} onClick={event => setInput(event.target.value)}`, 
+              `<input type='text' value={input} onChange={event => setInput(event.target.value)}`, 
+              `<input type='controlled' value={input} onChange={event => setInput(event.target.value)}`],
+                   correct: `<input type='text' value={input} onChange={event => setInput(event.target.value)}`, 
                       id: 2
                        },                                    
       ]
