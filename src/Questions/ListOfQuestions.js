@@ -15,7 +15,23 @@ export default function ListOfQuestions() {
               `<input type='controlled' value={input} onChange={event => setInput(event.target.value)}`],
                    correct: `<input type='text' value={input} onChange={event => setInput(event.target.value)}`, 
                       id: 2
-                       },                                    
+                       },  
+           {question: 'Given the example below, what is the correct way to implement the style prop in React', 
+                q:'Make the color of this text red -> <div>Hello World!</div>' , 
+                answers: [`<div className='style' style={color:}>Hello World!</div>`, 
+                       `<div style='red'>Hello World!</div>`, 
+                       `<div>style={{color: 'red', Hello World!}}</div>`, 
+                       `<div className='container' style={{color: 'red'}}>Hello World!</div>`
+                            ], 
+                correct: `<div className='container' style={{color: 'red'}}>Hello World!</div>`, 
+                id: 3
+                    }, 
+            {question: `Which answer best describes the question below:`, 
+                q: `After a React element is created, what package is mainly responsible for putting that element on the screen? `, 
+                answers: [`ReactDOM.render()`, `document.body.appendChild()`, `Babel`, `componentDidMount()`], 
+                correct: `ReactDOM.render()`, 
+                id: 4
+                        }                                  
       ]
 
       return questionBank

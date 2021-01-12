@@ -6,7 +6,7 @@ import ListOfQuestions from './ListOfQuestions'
 
         const [selected, setSelected] = useState(''); 
         const [count, setCount] = useState(0); 
-
+        
 
         const handleClick = (e) => {
             const correctAnswer = questionBank[0].correct
