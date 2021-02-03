@@ -32,7 +32,7 @@ import ListOfQuestions from './ListOfQuestions'
                   <div className='question-box'>{question.question} <pre><code>{question.q}</code></pre>  </div>
                 <div>
                 <ul>
-                    {question.answers.map((answer, index) => <li key={index} style={{border: 'solid 1px black'}} onClick={handleClick} value={selected}>{answer}</li>)}
+                    {question.answers.map((answer, index) => <li key={index} onClick={handleClick} value={selected}>{answer}</li>)}
                 </ul>
                 </div>      
           </div>)}
