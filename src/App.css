@@ -5,6 +5,26 @@
  align-items: center;
 }
 
-li {
-  list-style: none;
+.question-box {
+  border: solid 1px gray;
+  text-align: center;
 }
+
+li {
+  padding: 1em;
+  cursor: pointer;
+  list-style: none;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+}
+
+li:hover {
+  background-color: lightseagreen;
+  color: black;
+}
+
+.answer-images {
+  width: 20%;
+}
+
